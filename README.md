@@ -78,6 +78,13 @@ nodemon src/index.js
 ```
 
 
+### Mongodb URL for .env:
+
+```bash
+DB_URL=mongodb+srv://<user>:<password>@meditouch-backend.ogsmo.mongodb.net/<db_name>?retryWrites=true
+```
+
+
 ## Author
 
 [Kaium Al Limon](https://www.facebook.com/lemon.exee)
