@@ -14,6 +14,10 @@ const connectDB = require('./configs/db.config');
 require('dotenv').config();
 
 
+// import routes
+const studentCourseRoute = require('./features/student-course/routes/studentcourse.route');
+
+
 // Middleware
 app.use(express.json());
 
@@ -33,7 +37,7 @@ connectDB();
 
 
 // Routes
-
+app.use('/api', studentCourseRoute);
 
 
 // get the port from the environment
